@@ -4,7 +4,6 @@
   display: block;
   width: 1287px;
   height: 1132px;
-
 }
 
 /* Header Navigation */
@@ -22,7 +21,6 @@
   min-width: 800px;
   border-radius: 0px;
   background-color: transparent;
-
 }
 .logo-mod {
   height: 58.40010070800781px;
@@ -34,7 +32,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .work-with-us {
@@ -67,7 +64,6 @@
   background: rgba(29, 225, 244, 0.08);
   margin-left: 6.19px;
   cursor: pointer;
-
 }
 
 .sendwitch-menu {
@@ -162,7 +158,6 @@ color: #FFFFFF;
   left: 273px;
   right: 313px;
   bottom: 667.18px;
-
 }
 
 .ideas-text {
@@ -171,8 +166,6 @@ color: #FFFFFF;
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
-
-
 }
 
 .arrow-box {
@@ -196,7 +189,6 @@ color: #FFFFFF;
   max-width: 863px;
   height: 460.63px;
 }
-
 
 .transform-mod {
 font-family: Zolina;
@@ -230,17 +222,14 @@ color: rgba(255, 255, 255, 0.8);
   flex-direction: row;
   gap: 85.03px;
 }
-
 .button-wrapper {
   position: relative;
 }
-
 .button-text {
   font-family: Inter;
   width: 203.37px;
   height: 44px;
   font-size: 14.19px;
-  display: block;
   color: rgba(255, 255, 255, 1);
   font-weight: 500;
   line-height: 22.43px;
@@ -250,11 +239,9 @@ color: rgba(255, 255, 255, 0.8);
   transition: color 0.3s ease;
   z-index: 1;
 }
-
 .button-wrapper.active .button-text {
   color: rgba(29, 225, 244, 1);
 }
-
 .button-underline {
   position: absolute;
   bottom: -5px;
@@ -265,11 +252,9 @@ color: rgba(255, 255, 255, 0.8);
   transition: background-color 0.3s ease;
   z-index: 0;
 }
-
 .button-wrapper.active .button-underline {
   background-color: rgba(29, 225, 244, 1);
 }
-
 .information-box {
   width: 100%;
   height: 150px;
@@ -279,7 +264,6 @@ color: rgba(255, 255, 255, 0.8);
   align-items: center;
   padding-left: 30px;
 }
-
 .bottom-logo-img {
   display: block;
   width: 136.37px;
@@ -291,14 +275,11 @@ color: rgba(255, 255, 255, 0.8);
   fill: currentColor; 
   opacity: 0; 
 }
-
-
 .information-text-box {
   display: flex;
   justify-content: left;
   align-items: center;
 }
-
 .information-text-mod {
   font-family: Inter;
   font-size: 13px;
@@ -306,16 +287,24 @@ color: rgba(255, 255, 255, 0.8);
   line-height: 20.62px;
   letter-spacing: 0em;
   color:rgba(255, 255, 255, 0.8);
-
   margin-left: 71.72px;
   transition: opacity 0.5s ease;
   opacity: 0;
 }
 
+.font-special {
+  font-family: Zolina;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
 .fade-in {
   opacity: 1 !important;
 }
-
 .fade-out {
   opacity: 0;
 }
