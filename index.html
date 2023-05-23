@@ -112,32 +112,6 @@
 
 
 
-
-    <script>
-      function toggleButtonClick(index) {
-      var buttons = document.getElementsByClassName('button-wrapper');
-      var logos = [
-        "https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo1.png",
-        "https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo2.png",
-        "https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo3.png"
-      ];
-      var descriptions = [
-        "The Social Plus provides you a platform for success by delivering a comprehensive closed-loop solution, supporting the key service-centric processes found behind all the consulting and research and development performed as a service at your company.",
-        "The Social Plus has a well-defined and mature application development process, which comprises a complete lifecycle software for organizations that need a single coherent project and process platform to plan, develop, release, maintain and support their products, systems and services.",
-        "The Social Plus offers complete maintenance and support services for your software systems to assure satisfaction for end-users and business. We examine products and applications of different complexities and handle responsibilities through their life cycle, from maintaining it and make necessary changes to reengineer your software to fix mistakes, enhance performance and improve functionality."
-      ];
-
-      for (var i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove('active');
-      }
-
-      buttons[index].classList.add('active');
-      document.getElementById('information-logo').src = logos[index];
-      document.getElementById('information-description').textContent = descriptions[index];
-    }
-    </script>
-
-
     <script>
 
       var activeIndex = -1; // Track the active index
@@ -158,6 +132,30 @@
 
         activeIndex = index;
       }
+    </script>
+
+    <script>
+      function toggleButtonClick(index) {
+      var buttons = document.getElementsByClassName('button-wrapper');
+      var logos = [
+        "https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo1.svg",
+        "https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo2.svg",
+        "https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo3.svg"
+      ];
+      var descriptions = [
+        "The Social Plus provides you a platform for success by delivering a comprehensive closed-loop solution, supporting the key service-centric processes found behind all the consulting and research and development performed as a service at your company.",
+        "The Social Plus has a well-defined and mature application development process, which comprises a complete lifecycle software for organizations that need a single coherent project and process platform to plan, develop, release, maintain and support their products, systems and services.",
+        "The Social Plus offers complete maintenance and support services for your software systems to assure satisfaction for end-users and business. We examine products and applications of different complexities and handle responsibilities through their life cycle, from maintaining it and make necessary changes to reengineer your software to fix mistakes, enhance performance and improve functionality."
+      ];
+
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('active');
+      }
+
+      buttons[index].classList.add('active');
+      document.getElementById('information-logo').src = logos[index];
+      document.getElementById('information-description').textContent = descriptions[index];
+    }
     </script>
 
     <script>
