@@ -288,6 +288,7 @@ color: rgba(255, 255, 255, 0.8);
   background-position: center;
   background-size: contain;
   transition: opacity 0.5s ease;
+  fill: currentColor; /* Preserve the original color of the SVG logo */
 }
 
 .information-text-box {
