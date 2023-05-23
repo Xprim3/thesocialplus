@@ -31,7 +31,13 @@
   * Updated: Mar 10 2023 by Denis Januzi
   * Contact Address: denisjanuzi@gmail.com 
   ======================================================== -->
+  
+  
+
+
+
   </head>
+  
   <body>
 
     <!-- Section 1 -->
@@ -73,7 +79,7 @@
           <span class="transform-mod">Transform<br></span><span class="optimize-text">& optimize your business processes</span>        
         </div>
         <div class="application-box">
-          <div class="button-wrapper active" onclick="toggleButtonClick(0)">
+          <div class="button-wrapper" onclick="toggleButtonClick(0)">
             <p class="button-text font-special">INFORMATION CONSULTANT TECHNOLOGY (ICT) SERVICE</p>
             <span class="button-underline"></span>
           </div>
@@ -88,9 +94,9 @@
         </div>
         
         <div class="information-box">
-          <img class="bottom-logo-img" id="information-logo" src="https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo1.svg" alt="Information">
+          <img class="bottom-logo-img fade-in" id="information-logo" src="https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo1.svg" alt="Information">
           <span class="information-text-box">
-            <p class="information-text-mod" id="information-description">The Social Plus provides you a platform for success by delivering a comprehensive closed-loop solution, supporting the key service-centric processes found behind all the consulting and research and development performed as a service at your company.</p>
+            <p class="information-text-mod fade-in" id="information-description">The Social Plus provides you a platform for success by delivering a comprehensive closed-loop solution, supporting the key service-centric processes found behind all the consulting and research and development performed as a service at your company.</p>
           </span>
         </div>
       </div>
@@ -110,62 +116,38 @@
 
 
 
-
-
+  
     <script>
-
-      var activeIndex = -1; // Track the active index
       function toggleButtonClick(index) {
-        var buttonWrappers = document.getElementsByClassName("button-wrapper");
-        var buttonTexts = document.getElementsByClassName("button-text");
-        var buttonUnderlines = document.getElementsByClassName("button-underline");
-
-        if (activeIndex !== -1) {
-          buttonWrappers[activeIndex].classList.remove("clicked");
-          buttonTexts[activeIndex].classList.remove("clicked");
-          buttonUnderlines[activeIndex].classList.remove("clicked");
+        var buttons = document.getElementsByClassName('button-wrapper');
+        var logos = [
+          "https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo1.svg",
+          "https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo2.svg",
+          "https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo3.svg"
+        ];
+        var descriptions = [
+          "The Social Plus provides you a platform for success by delivering a comprehensive closed-loop solution, supporting the key service-centric processes found behind all the consulting and research and development performed as a service at your company.",
+          "The Social Plus has a well-defined and mature application development process, which comprises a complete lifecycle software for organizations that need a single coherent project and process platform to plan, develop, release, maintain and support their products, systems and services.",
+          "The Social Plus offers complete maintenance and support services for your software systems to assure satisfaction for end-users and business. We examine products and applications of different complexities and handle responsibilities through their life cycle, from maintaining it and make necessary changes to reengineer your software to fix mistakes, enhance performance and improve functionality."
+        ];
+    
+        for (var i = 0; i < buttons.length; i++) {
+          buttons[i].classList.remove('active');
         }
-
-        buttonWrappers[index].classList.add("clicked");
-        buttonTexts[index].classList.add("clicked");
-        buttonUnderlines[index].classList.add("clicked");
-
-        activeIndex = index;
+    
+        buttons[index].classList.add('active');
+        document.getElementById('information-logo').classList.remove('fade-in');
+        document.getElementById('information-description').classList.remove('fade-in');
+    
+        setTimeout(function() {
+          document.getElementById('information-logo').src = logos[index];
+          document.getElementById('information-description').textContent = descriptions[index];
+          document.getElementById('information-logo').classList.add('fade-in');
+          document.getElementById('information-description').classList.add('fade-in');
+        }, 300); // Delay the transition by 300 milliseconds for a smoother effect
       }
     </script>
-
-    <script>
-      function toggleButtonClick(index) {
-      var buttons = document.getElementsByClassName('button-wrapper');
-      var logos = [
-        "https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo1.svg",
-        "https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo2.svg",
-        "https://raw.githubusercontent.com/Xprim3/thesocialplus/main/media/icons/app-logo3.svg"
-      ];
-      var descriptions = [
-        "The Social Plus provides you a platform for success by delivering a comprehensive closed-loop solution, supporting the key service-centric processes found behind all the consulting and research and development performed as a service at your company.",
-        "The Social Plus has a well-defined and mature application development process, which comprises a complete lifecycle software for organizations that need a single coherent project and process platform to plan, develop, release, maintain and support their products, systems and services.",
-        "The Social Plus offers complete maintenance and support services for your software systems to assure satisfaction for end-users and business. We examine products and applications of different complexities and handle responsibilities through their life cycle, from maintaining it and make necessary changes to reengineer your software to fix mistakes, enhance performance and improve functionality."
-      ];
-
-      for (var i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove('active');
-      }
-
-      buttons[index].classList.add('active');
-      document.getElementById('information-logo').classList.remove('fade-in');
-      document.getElementById('information-description').classList.remove('fade-in');
-
-      setTimeout(function() {
-        document.getElementById('information-logo').src = logos[index];
-        document.getElementById('information-description').textContent = descriptions[index];
-        document.getElementById('information-logo').classList.add('fade-in');
-        document.getElementById('information-description').classList.add('fade-in');
-      }, 300); // Delay the addition of fade-in class for smooth transition
-    }
-
-    </script>
-
+    
     <script>
       function myFunction(x) {
         x.classList.toggle("change");
@@ -173,5 +155,7 @@
       </script>
 
     <script type="module" src="src/main.js"></script>
+
+    
   </body>
 </html>
