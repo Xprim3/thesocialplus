@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the Social Plus Clone</title>
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+
+  <!-- Vendor CSS Files -->
+  <link href="dist/hamburgers.css" rel="stylesheet">
+  
+
+  <!-- Template Main CSS File -->
+  
+
+  <!-- =======================================================
+  * Website Designed by Denis Januzi
+  * Updated: Mar 10 2023 by Denis Januzi
+  * Contact Address: denisjanuzi@gmail.com 
+  ======================================================== -->
+  </head>
+  <body>
+
+    <!-- Section 1 -->
+    <section class="top-section-one">
+      <img class="top-background-image" src="media/banners/section one background.png">
+      
+      <!--Start of top Header and Menu-->
+      <div class="top-header-nav">
+        <img class="logo-mod" src="media/banners/Group.svg">
+        <div class="right-section-buttons">
+          <span class="work-with-us">Work With Us</span>
+          <span class="sendwich-box">
+            <div class="sendwitch-menu" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </span>
+        </div>
+      </div>
+      <!--End of top Header and Menu-->
+      
+      <div class="centre-logo">
+        <img src="media/banners/logo-centre-svg.svg">
+        <img class="text-mod" src="media/banners/text.svg">
+      </div>
+      <span class="line-only">&nbsp;</span>
+      <span class="software-and-design">
+        <p class="software-text">SOFTWARE <span class="and-mod">&</span> DESIGN HOUSE</p>
+      </span>
+      <div class="ideas-box">
+        <p class="ideas-text">Ideas are easy. Implementation is hard. Let us do the heavy lifting!</p>
+      </div>
+      <div class="arrow-box">
+        <img src="media/icons/material-symbols_keyboard-double-arrow-down.svg">
+      </div>
+      <div class="bottom-section-boxs">
+        <div class="transform-box">
+          <span class="transform-mod">Transform<br></span><span class="optimize-text">& optimize your business processes</span>        
+        </div>
+        <div class="application-box">
+          <div class="button-wrapper" onclick="toggleButtonClick(0)">
+            <p class="button-text font-special">INFORMATION CONSULTANT TECHNOLOGY (ICT) SERVICE</p>
+            <span class="button-underline"></span>
+          </div>
+          <div class="button-wrapper" onclick="toggleButtonClick(1)">
+            <p class="button-text">APPLICATION DEVELOPMENT</p>
+            <span class="button-underline"></span>
+          </div>
+          <div class="button-wrapper" onclick="toggleButtonClick(2)">
+            <p class="button-text">APPLICATION MAINTENANCE & IT SERVICE-HELP DESK</p>
+            <span class="button-underline"></span>
+          </div>
+        </div>
+        
+        <div class="information-box">
+          <img class="bottom-logo-img" id="information-logo" src="media/icons/information-logo1.svg" alt="Information">
+          <span class="information-text-box">
+            <p class="information-text-mod" id="information-description">The Social Plus provides you a platform for success by delivering a comprehensive closed-loop solution, supporting the key service-centric processes found behind all the consulting and research and development performed as a service at your company.</p>
+          </span>
+        </div>
+      </div>
+      
+     
+
+      
+      
+      
+      
+
+      
+
+
+    </section>
+
+
+
+
+
+
+
+    <script>
+      function toggleButtonClick(index) {
+      var buttons = document.getElementsByClassName('button-wrapper');
+      var logos = [
+        "media/icons/information-logo1.svg",
+        "media/icons/information-logo2.svg",
+        "media/icons/information-logo3.svg"
+      ];
+      var descriptions = [
+        "The Social Plus provides you a platform for success by delivering a comprehensive closed-loop solution, supporting the key service-centric processes found behind all the consulting and research and development performed as a service at your company.",
+        "The Social Plus has a well-defined and mature application development process, which comprises a complete lifecycle software for organizations that need a single coherent project and process platform to plan, develop, release, maintain and support their products, systems and services.",
+        "The Social Plus offers complete maintenance and support services for your software systems to assure satisfaction for end-users and business. We examine products and applications of different complexities and handle responsibilities through their life cycle, from maintaining it and make necessary changes to reengineer your software to fix mistakes, enhance performance and improve functionality."
+      ];
+
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('active');
+      }
+
+      buttons[index].classList.add('active');
+      document.getElementById('information-logo').src = logos[index];
+      document.getElementById('information-description').textContent = descriptions[index];
+    }
+      
+    </script>
+
+
+    <script>
+
+      var activeIndex = -1; // Track the active index
+      function toggleButtonClick(index) {
+        var buttonWrappers = document.getElementsByClassName("button-wrapper");
+        var buttonTexts = document.getElementsByClassName("button-text");
+        var buttonUnderlines = document.getElementsByClassName("button-underline");
+
+        if (activeIndex !== -1) {
+          buttonWrappers[activeIndex].classList.remove("clicked");
+          buttonTexts[activeIndex].classList.remove("clicked");
+          buttonUnderlines[activeIndex].classList.remove("clicked");
+        }
+
+        buttonWrappers[index].classList.add("clicked");
+        buttonTexts[index].classList.add("clicked");
+        buttonUnderlines[index].classList.add("clicked");
+
+        activeIndex = index;
+      }
+    </script>
+
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+      </script>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
