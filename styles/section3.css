@@ -1,0 +1,38 @@
+.section3-block {
+  display: flex;
+  width: 1280px;
+  height: 519.89px;
+  background: linear-gradient(270deg, rgba(7, 55, 60, 0.2) 0.96%, rgba(25, 149, 240, 0.2) 50.56%, rgba(0, 0, 0, 0.2) 99.98%), #010B13;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-box {
+  position: relative;
+  width: 911.5px;
+  height: 402.86px;
+  overflow: hidden;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(15, 1fr);
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.service-box::-webkit-scrollbar {
+  display: none;
+}
+
+.service-box-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 301.17px;
+  height: 394.83px;
+}
+
+
+
+
+

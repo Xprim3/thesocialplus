@@ -2,17 +2,17 @@
 
 .section2-block {
   display: block;
-  width: 1287px;
-  height: 770.92px;
-
+  width: 1280px;
+  height: 780.92px;
 }
 
 .section2-box {
   max-width: 876.43px;
   height: 705px;
   margin: 32px 201.78px 33.92px 201.78px;
-
 }
+
+/* Top Color Icons */
 
 .color-icons-box {
   display: flex;
@@ -34,6 +34,8 @@
   margin-left: 8.49px;
   object-fit: contain;
 }
+
+/* Latest Work Box and Title Styling including the line */
 
 .latest-work-box {
   display: flex;
@@ -92,6 +94,8 @@
   align-items: center;
 }
 
+/* Autos, Smart, PRG Proshop Box */
+
 .autos-today-box {
   width: 814.82px;
   height: 66px;
@@ -126,8 +130,6 @@
   padding: 6px 18px;
   border: 1px solid rgba(15, 50, 83, 1);
   border-radius: 25px;
-
-
 }
 
 .creative-text-button {
@@ -165,11 +167,7 @@
   line-height: 66px;
   letter-spacing: -1px;
   text-align: left;
-
 }
-
-
-
 .arrow-up {
   width: 55.18px;
   height: 55.18px;
