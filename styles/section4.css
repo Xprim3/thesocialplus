@@ -1,0 +1,145 @@
+.section4-block {
+  display: block;
+  width: 1280px;
+  height: 903px;
+  background: rgba(29, 225, 244, 0.16);
+  position: relative;
+}
+
+.ecosystem-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1261.82px;
+  height: 796px;
+  position: absolute;
+  top: 35.19px;
+  left: 9px;
+  right: 14.18px;
+  bottom: 71.81px;
+}
+
+.ecosystem-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(80px);
+}
+
+.ecosystem-top-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 932px;
+  height: 164px;
+  top: 35.19px;
+  left: 176px;
+  right: 177px;
+  bottom: 703.81px;
+}
+
+.eco-top-box {
+  font-family: Zolina;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 549.04px;
+  height: 35px;
+  color: rgba(24, 78, 119, 1);
+}
+
+.idea-text {
+  width: 932px;
+  height: 116px;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(0, 42, 50, 1);
+
+
+}
+
+.multisystem-box {
+  position: absolute;
+  top: 387.19px;
+  left: 176px;
+  right: 748px;
+  bottom: 447.81px;
+  width: 361px;
+  height: 125.57px;
+}
+
+.system-text {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 42, 50, 1);
+
+}
+
+.special-font {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(24, 78, 119, 1);
+}
+
+.get-started-button {
+  height: 40.57142639160156px;
+  width: 152px;
+  background: rgba(29, 225, 244, 0.3);
+  border-radius: 10.819px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17px;
+  cursor: pointer;
+}
+
+.get-started-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.8476px;
+  line-height: 16px;
+  color: #0E6CA0;
+  width: 142px;
+  height: 40.57px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.mydev-box {
+  display: block;
+  width: 488px;
+  height: 432.32px;
+  border: solid;
+  position: absolute;
+  top: 234.19px;
+  left: 632px;
+  right: 165px;
+  bottom: 236.49px;
+}
+
+.eclypse-logo {
+  width: 100%;
+  height: 100%;
+  position: relative;
+ 
+
+}
+
+
