@@ -1,3 +1,7 @@
+/*--------------------------------------------------------------
+# Section 4 Elements and styling
+--------------------------------------------------------------*/
+
 .section4-block {
   display: block;
   width: 1280px;
@@ -5,6 +9,10 @@
   background: rgba(29, 225, 244, 0.16);
   position: relative;
 }
+
+/*--------------------------------------------------------------
+# Top Box of the section 4
+--------------------------------------------------------------*/
 
 .ecosystem-box {
   display: flex;
@@ -23,7 +31,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(80px);
+  filter: blur(130px);
+  padding-top: 310px;
 }
 
 .ecosystem-top-box {
@@ -65,6 +74,10 @@
 
 
 }
+
+/*--------------------------------------------------------------
+# Midle Box Get Started Button & My Dev Links
+--------------------------------------------------------------*/
 
 .multisystem-box {
   position: absolute;
@@ -126,7 +139,6 @@
   display: block;
   width: 488px;
   height: 432.32px;
-  border: solid;
   position: absolute;
   top: 234.19px;
   left: 632px;
@@ -135,11 +147,234 @@
 }
 
 .eclypse-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   position: relative;
- 
+}
 
+/*--------------------------------------------------------------
+# Bottom Box of the Section 4 (Links,Chat,Tickets etc..)
+--------------------------------------------------------------*/
+
+.bottom-box-links {
+  width: 1280px;
+  height: 98px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  grid-auto-flow: column;
+  scrollbar-width: thin;
+  justify-items: center;
+  scrollbar-color: transparent transparent;
+  align-items: center;
+  position: absolute;
+  bottom: 128.81px;
+  left: 2px;
+  right: 3px;
+  top: 676.19px;
+  
+}
+
+.review-box {
+  height: 40px;
+  width: 128px;
+  border-radius: 20px;
+  background-color: rgba(250, 168, 54, 0.15);
+  text-align: center;
+  line-height: 40px;
+}
+
+.gold-box {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  width: 128px;
+  border-radius: 20px;
+  background: rgba(250, 168, 54, 1, 0.15);
+  text-align: center;
+  line-height: 40px;
+  gap: 9px;
+  mix-blend-mode: normal;
+}
+
+.icons-buttons {
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+  margin-left: 15px;
+
+}
+
+.review-text-gold {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 40px;
+  color: #FFBE1D;
+
+}
+
+.blue-box {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  width: 128px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  gap: 10.76px;
+  background-color: rgba(0, 135, 226, 0.15);
+  mix-blend-mode: normal;
+  
+
+}
+
+.review-text-blue {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 40px;
+  color: #0087E2;
+}
+
+.chat-box {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  width: 128px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  gap: 8.87px;
+  background-color: rgba(14, 108, 160, 0.15);
+  mix-blend-mode: normal;
+  
+
+}
+
+.review-text-chat {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 40px;
+  color: #0E6CA0;
+}
+
+.campaign {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  width: 154.79px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  gap: 8.87px;
+  background-color: rgba(24, 82, 125, 0.15);
+  mix-blend-mode: normal;
+}
+
+.review-text-campaign {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 40px;
+  color: #18527D;
+}
+
+.campaign {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  width: 154.79px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  gap: 10.84px;
+  background-color: rgba(24, 82, 125, 0.15);
+  mix-blend-mode: normal;
+}
+
+.review-text-campaign {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 40px;
+  color: #18527D;
+}
+
+.ticket {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  width: 128px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  gap: 8.87px;
+  background-color: rgba(16, 50, 84, 0.15);
+  mix-blend-mode: normal;
+}
+
+.review-text-ticket {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 40px;
+  color: #103254;
+}
+
+.track {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  width: 128px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  gap: 11px;
+  background-color: rgba(0, 180, 229, 0.15);
+  mix-blend-mode: normal;
+}
+
+.review-text-track {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 40px;
+  color: #00B4E5;
+}
+
+.analytics {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  width: 147.02px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  gap: 11px;
+  background-color: rgba(24, 82, 125, 0.15);
+  mix-blend-mode: normal;
+}
+
+.review-text-analytics {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 40px;
+  color: #18527D;
 }
 
 
