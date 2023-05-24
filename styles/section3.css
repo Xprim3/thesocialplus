@@ -1,5 +1,6 @@
 .section3-block {
   display: flex;
+  position: relative;
   width: 1280px;
   height: 519.89px;
   background: linear-gradient(270deg, rgba(7, 55, 60, 0.2) 0.96%, rgba(25, 149, 240, 0.2) 50.56%, rgba(0, 0, 0, 0.2) 99.98%), #010B13;
@@ -7,6 +8,8 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Services Sliding Effect and Content */
 
 .service-box {
   position: relative;
@@ -30,6 +33,20 @@
   align-items: center;
   width: 301.17px;
   height: 394.83px;
+}
+
+.services-top-text {
+  position: absolute;
+  font-family: 'Zolina';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32.6802px;
+  line-height: 158.08%;
+  color: rgba(255, 255, 255, 1);
+  top: 70.74px;
+  left: 283.34px;
+  right: 849.89px;
+  bottom: 397.15px;
 }
 
 
