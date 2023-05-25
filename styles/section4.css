@@ -159,24 +159,42 @@
 # Bottom Box of the Section 4 (Links,Chat,Tickets etc..)
 --------------------------------------------------------------*/
 
+.bottom-box-container {
+  position: absolute;
+  bottom: 128.81px;
+  left: 2px;
+  right: 4px;
+  top: 676.19px;
+  width: 1275px;
+  height: 98px;
+  overflow: hidden;
+}
+
 .bottom-box-links {
   width: 1280px;
   height: 98px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 1fr;
-  overflow: hidden;
-  grid-auto-flow: column;
-  scrollbar-width: thin;
   justify-items: center;
-  scrollbar-color: transparent transparent;
   align-items: center;
-  position: absolute;
-  bottom: 128.81px;
-  left: 2px;
-  right: 3px;
-  top: 676.19px;
-  
+}
+
+.bottom-box-wrapper {
+  width: max-content;
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll 50s linear infinite;
+  animation-delay: -1s;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .review-box {
@@ -187,7 +205,6 @@
   text-align: center;
   line-height: 40px;
 }
-
 .gold-box {
   display: flex;
   height: 40px;
@@ -200,15 +217,12 @@
   gap: 9px;
   mix-blend-mode: normal;
 }
-
 .icons-buttons {
   display: inline-block;
   width: 20px;
   height: 19px;
   margin-left: 15px;
-
 }
-
 .review-text-gold {
   font-family: 'Inter';
   font-style: normal;
@@ -216,9 +230,7 @@
   font-size: 19px;
   line-height: 40px;
   color: #FFBE1D;
-
 }
-
 .blue-box {
   display: flex;
   height: 40px;
@@ -230,10 +242,7 @@
   gap: 10.76px;
   background-color: rgba(0, 135, 226, 0.15);
   mix-blend-mode: normal;
-  
-
 }
-
 .review-text-blue {
   font-family: 'Inter';
   font-style: normal;
@@ -242,7 +251,6 @@
   line-height: 40px;
   color: #0087E2;
 }
-
 .chat-box {
   display: flex;
   height: 40px;
@@ -254,10 +262,7 @@
   gap: 8.87px;
   background-color: rgba(14, 108, 160, 0.15);
   mix-blend-mode: normal;
-  
-
 }
-
 .review-text-chat {
   font-family: 'Inter';
   font-style: normal;
@@ -266,7 +271,6 @@
   line-height: 40px;
   color: #0E6CA0;
 }
-
 .campaign {
   display: flex;
   height: 40px;
@@ -279,7 +283,6 @@
   background-color: rgba(24, 82, 125, 0.15);
   mix-blend-mode: normal;
 }
-
 .review-text-campaign {
   font-family: 'Inter';
   font-style: normal;
@@ -288,7 +291,6 @@
   line-height: 40px;
   color: #18527D;
 }
-
 .campaign {
   display: flex;
   height: 40px;
@@ -301,7 +303,6 @@
   background-color: rgba(24, 82, 125, 0.15);
   mix-blend-mode: normal;
 }
-
 .review-text-campaign {
   font-family: 'Inter';
   font-style: normal;
@@ -310,7 +311,6 @@
   line-height: 40px;
   color: #18527D;
 }
-
 .ticket {
   display: flex;
   height: 40px;
@@ -323,7 +323,6 @@
   background-color: rgba(16, 50, 84, 0.15);
   mix-blend-mode: normal;
 }
-
 .review-text-ticket {
   font-family: 'Inter';
   font-style: normal;
@@ -332,7 +331,6 @@
   line-height: 40px;
   color: #103254;
 }
-
 .track {
   display: flex;
   height: 40px;
@@ -345,7 +343,6 @@
   background-color: rgba(0, 180, 229, 0.15);
   mix-blend-mode: normal;
 }
-
 .review-text-track {
   font-family: 'Inter';
   font-style: normal;
@@ -354,7 +351,6 @@
   line-height: 40px;
   color: #00B4E5;
 }
-
 .analytics {
   display: flex;
   height: 40px;
@@ -367,7 +363,6 @@
   background-color: rgba(24, 82, 125, 0.15);
   mix-blend-mode: normal;
 }
-
 .review-text-analytics {
   font-family: 'Inter';
   font-style: normal;
