@@ -373,3 +373,116 @@
 }
 
 
+/*--------------------------------------------------------------
+# Bottom of the Section 4 (Demo Box)
+--------------------------------------------------------------*/
+
+.demo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 884.7px;
+  height: 229px;
+  position: absolute;
+  bottom: 0;
+  top: 791.19px;
+  left: 191px;
+  right: 209.3px;
+  background: #0F406B;
+  border-radius: 0px;
+  gap: 65.9px;
+}
+
+.demo-box-content-boxes {
+  display: block;
+  width: 459.65px;
+  height: 99.67px;
+}
+
+.dreams-special {
+  font-family: Inter;
+  font-size: 25.19px;
+  font-weight: 400;
+  line-height: 35.65px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(29, 225, 244, 1);
+}
+
+.demo-normal-text {
+  height: 99.67px;
+  color: rgba(255, 255, 255, 1);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24.17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.demo-box-buttons-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 272.66px;
+  height: 48.6px;
+}
+
+.demo-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14.8273px 0px;
+  gap: 8.24px;
+  width: 152.39px;
+  height: 48.6px;
+  border-radius: 13.1799px;
+  background: rgba(0, 180, 229, 1);
+  cursor: pointer;
+}
+
+.demo-text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.learn-more-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px, 0px, 15px, 0px;
+  gap: 8.24px;
+  width: 112.03px;
+  height: 48.6px;
+  border-radius: 13.18px;
+  background: rgba(29, 225, 244, 0.15);
+  cursor: pointer;
+
+}
+
+.learn-text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  color: rgba(29, 225, 244, 1);
+
+  
+}
