@@ -238,6 +238,7 @@
         
         
         
+        
       </div>
         <!--End of the MyDev Box still needs animation on the ellipses and links-->
       
@@ -269,20 +270,30 @@
 
             <!-- Start of Script for the mydev Links Slider -->
 
-
       <script>
-        const contentContainer = document.querySelector('.bottom-box-wrapper');
-        const contentElements = contentContainer.querySelectorAll('.bottom-box-links');
+      const contentContainer = document.querySelector('.bottom-box-wrapper');
+      const contentElements = contentContainer.querySelectorAll('.bottom-box-links');
 
-        function repeatContentInOrder() {
-          const contentClone = [...contentElements].map((element) => element.cloneNode(true));
-          
-          for (const element of contentClone) {
-            contentContainer.appendChild(element);
-          }
+      function repeatContentInOrder() {
+        const contentClone = [...contentElements].map((element) => element.cloneNode(true));
+
+        for (const element of contentClone) {
+          contentContainer.appendChild(element);
         }
 
-        repeatContentInOrder();
+        const containerWidth = contentContainer.getBoundingClientRect().width;
+        const totalWidth = contentElements.length * containerWidth;
+        const animationDuration = Math.floor(totalWidth / 50); // Adjust the animation duration based on the container width
+
+        // Calculate the animation delay based on the desired speed and number of content elements
+        const animationDelay = (totalWidth / 100) * contentElements.length; // Adjust the divisor (300) to control the speed
+
+        contentContainer.style.animationDuration = `${animationDuration}s`;
+        contentContainer.style.animationDelay = `-${animationDelay}s`;
+        contentContainer.style.transform = `translateX(-${totalWidth}px)`;
+      }
+
+      repeatContentInOrder();
       </script>
 
       <!-- End of Script for the mydev Links Slider -->
